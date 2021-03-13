@@ -41,6 +41,13 @@ header {
   max-width: 800px;
   padding: 30px 40px;
 }
+/* setting card */
+.setting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0;
+}
 
 .card-header::after {
   content: " ";

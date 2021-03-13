@@ -29,7 +29,7 @@ const randomfunc = {
   lower: getRandomLower,
   upper: getRandomUpper,
   number: getRandomNumb,
-  symbols: getRandomSymb,
+  symbols: getRandomSymb
 }
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
