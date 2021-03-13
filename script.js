@@ -24,7 +24,13 @@ function getRandomSymb(){
   const syms = '!@#$%^&*(){}[]=<>/,.';
   return syms[Math.floor(Math.random() * syms.length)];
 }
-
+//Combine to 1 random function
+const randomfunc = {
+  lower: getRandomLower,
+  upper: getRandomUpper,
+  number: getRandomNumb,
+  symbols: getRandomSymb,
+}
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
