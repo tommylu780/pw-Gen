@@ -73,6 +73,7 @@ function writePassword(e) {
   passwordEl.innerText = password;
 
   passwordText.value = password;
+  alert("Your password is generated!\n Your password is: " + passwordText.value);
 }
 
 // Add event listener to generate button
