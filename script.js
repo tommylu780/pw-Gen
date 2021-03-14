@@ -38,7 +38,7 @@ function getRandomSymb(){
 function generatePassword(lower, upper, number, symbols, length) {
 	let generatedPassword = '';
 	const typesCount = lower + upper + number + symbols;
-	const typesArr = [{lower}, {upper}, {number},
+	const typesArr = [{upper}, {lower}, {number},
      {symbols}].filter(item => Object.values(item)[0]);
 	
 	// Doesn't have a selected type
