@@ -42,9 +42,17 @@ function generatePassword(lower, upper, number, symbols, length) {
      {symbols}].filter(item => Object.values(item)[0]);
 	
 	// Doesn't have a selected type
-	if(typesCount === 0) {
-		return 'Please select at least 1 type to generate password';
+	if(typesCount === 0 && length < 8 || length	> 128 ){
+		alert('WRONG LENGTH AND NO CHARACTER TYPE SELECTED');
+		return 'Please select password type with right conditions';
+	}else if(typesCount === 0) {
+		alert('Please select character type');
+		return 'Please select password type with right conditions';
+	}else if(length < 8 || length	> 128){
+		alert('WRONG LENGTH');
+		return 'Please select password type with right conditions';
 	}
+
 	
 	// create a loop random every index
 	for(let i=0; i<length; i+=typesCount) {
